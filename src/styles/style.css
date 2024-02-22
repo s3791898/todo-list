@@ -1,0 +1,21 @@
+:root {}
+
+@font-face {
+  font-family: "noto-sans";
+  src: url(/src/assets/fonts/noto-sans.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "noto-sans";
+  font-size: 1.4rem;
+}
