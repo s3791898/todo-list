@@ -1,4 +1,11 @@
-:root {}
+:root {
+  --grey: #f0eef1;
+  --white: #fffbfb;
+  --blueish-grey: #adadc9;
+  --container-width: 1200px;
+  --mint-green: #98FB98;
+  --light-red: #FF5A5F;
+}
 
 @font-face {
   font-family: "noto-sans";
@@ -18,4 +25,19 @@
 body {
   font-family: "noto-sans";
   font-size: 1.4rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--grey);
+  position: relative;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }

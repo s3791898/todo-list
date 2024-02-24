@@ -1,4 +1,4 @@
-class TodoItem {
+class Todo {
   constructor(
     title,
     description,
