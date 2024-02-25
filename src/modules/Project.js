@@ -3,7 +3,11 @@ import { toDate, isToday, isThisWeek, subDays } from "date-fns";
 export default class Project {
   constructor(name) {
     this._name = name;
-    this._tasks = [];
+    this._todos = [];
+  }
+
+  addTodo(todo) {
+    this._todos.push(todo);
   }
 
   // Getter and setter for name
@@ -16,11 +20,11 @@ export default class Project {
   }
 
   // Getter and setter for tasks
-  get tasks() {
+  get todos() {
     return this._tasks;
   }
 
-  set tasks(value) {
+  set todos(value) {
     this._tasks = value;
   }
 }
